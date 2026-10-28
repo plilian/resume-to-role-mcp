@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
-  <title id="title">Career Compass</title>
-  <desc id="desc">A personal AI job-search toolkit to discover roles, match all your experience, tailor application documents, and prepare applications.</desc>
+  <title id="title">Resume-to-Role</title>
+  <desc id="desc">An AI job search agent that finds roles for your target titles, ranks them across every imported resume, creates job-specific resumes and cover letters, and sends requested application batches.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#101B35"/>
@@ -26,11 +26,11 @@
     <circle cx="45" cy="45" r="4" fill="#F8FBFF"/>
   </g>
 
-  <text x="172" y="115" fill="#F6FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="49" font-weight="750" letter-spacing="-1.4">Career Compass</text>
-  <text x="174" y="159" fill="#B9D1DF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="450">Your AI job-search copilot, wherever you work</text>
+  <text x="172" y="115" fill="#F6FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="49" font-weight="750" letter-spacing="-1.4">Resume-to-Role</text>
+  <text x="174" y="159" fill="#B9D1DF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="450">Your all-resume AI job search &amp; application agent</text>
   <rect x="174" y="184" width="455" height="3" rx="2" fill="url(#accent)"/>
-  <text x="174" y="226" fill="#E4EFF5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Discover relevant roles · Match all your experience</text>
-  <text x="174" y="253" fill="#E4EFF5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Tailor evidence-backed applications · Keep your data local</text>
+  <text x="174" y="226" fill="#E4EFF5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Find &amp; rank jobs using your full resume library</text>
+  <text x="174" y="253" fill="#E4EFF5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Tailor each resume &amp; letter · Apply in batches of five</text>
 
   <g transform="translate(174 291)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing=".7">
     <rect width="48" height="27" rx="13.5" fill="#214B5A" stroke="#52D6C7" stroke-opacity=".55"/><text x="24" y="18" text-anchor="middle" fill="#8CEADF">MCP</text>

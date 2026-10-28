@@ -13,7 +13,7 @@ import httpx
 from bs4 import BeautifulSoup
 
 TIMEOUT=httpx.Timeout(20.0,connect=8.0)
-HEADERS={"User-Agent":"CareerCompassMCP/0.1 (+https://modelcontextprotocol.io/)"}
+HEADERS={"User-Agent":"ResumeToRoleMCP/0.1 (+https://modelcontextprotocol.io/)"}
 
 def plain(value: Any) -> str:
     if value is None: return ""

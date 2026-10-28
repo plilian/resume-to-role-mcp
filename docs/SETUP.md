@@ -1,6 +1,6 @@
-# Host setup
+# Resume-to-Role host setup
 
-Career Compass communicates over MCP stdio. Keep the repository at a stable local path after registration; the host starts the server with `uv`.
+Resume-to-Role communicates over MCP stdio. Keep the repository at a stable local path after registration; the host starts the server with `uv`. The MCP server and Skill keep the `career-compass` integration identifier for compatibility with existing host configurations.
 
 ## Windows helper
 
@@ -27,13 +27,13 @@ Use an absolute repository path. If the host cannot locate `uv` on its PATH, use
 ### Codex CLI
 
 ```bash
-codex mcp add career-compass -- uv --directory "/absolute/path/to/career-compass-mcp-skill" run career-compass-mcp
+codex mcp add career-compass -- uv --directory "/absolute/path/to/resume-to-role-mcp" run career-compass-mcp
 ```
 
 ### Claude Code
 
 ```bash
-claude mcp add --scope user career-compass -- uv --directory "/absolute/path/to/career-compass-mcp-skill" run career-compass-mcp
+claude mcp add --scope user career-compass -- uv --directory "/absolute/path/to/resume-to-role-mcp" run career-compass-mcp
 ```
 
 ### Gemini CLI
@@ -44,7 +44,7 @@ Merge this entry into the `mcpServers` object in `~/.gemini/settings.json` (Wind
 {
   "career-compass": {
     "command": "uv",
-    "args": ["--directory", "/absolute/path/to/career-compass-mcp-skill", "run", "career-compass-mcp"]
+    "args": ["--directory", "/absolute/path/to/resume-to-role-mcp", "run", "career-compass-mcp"]
   }
 }
 ```

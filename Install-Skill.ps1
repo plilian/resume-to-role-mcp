@@ -17,6 +17,6 @@ foreach ($name in $selected) {
   $target = $destinations[$name]
   New-Item -ItemType Directory -Force -Path $target | Out-Null
   Copy-Item -LiteralPath (Join-Path $source 'SKILL.md') -Destination (Join-Path $target 'SKILL.md') -Force
-  Write-Output "Installed Career Compass skill for ${name}: $target"
+  Write-Output "Installed Resume-to-Role skill for ${name}: $target"
 }
 Write-Output 'Restart or refresh the selected host to load the skill.'

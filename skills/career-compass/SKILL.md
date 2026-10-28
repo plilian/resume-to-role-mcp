@@ -1,11 +1,11 @@
 ---
 name: career-compass
-description: Discover and rank jobs, evaluate fit across imported resumes, and prepare evidence-grounded ATS-friendly resumes and cover letters in English, Farsi, Spanish, or Arabic using the host's signed-in model.
+description: Resume-to-Role finds jobs for your target titles and countries, ranks job descriptions against evidence pooled from every imported resume, tailors ATS-friendly resumes and cover letters per job, and fills or submits requested application batches of up to five through the signed-in host when browser controls are available.
 ---
 
-# Career Compass
+# Resume-to-Role
 
-Use the connected `career-compass` MCP tools and the model available in this host. The server never calls an LLM API; do not request a separate provider key.
+Use the connected MCP tools and the model available in this host. The server remains registered with the compatibility identifier `career-compass`; it never calls an LLM API, so do not request a separate provider key.
 
 ## First use
 

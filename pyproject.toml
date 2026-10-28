@@ -1,7 +1,7 @@
 [project]
 name = "career-compass-mcp"
 version = "0.1.0"
-description = "Local-first multilingual MCP and Agent Skill for evidence-backed job discovery and tailored applications"
+description = "Local-first AI job discovery and ranking across multiple resumes, with job-tailored resumes, cover letters, and batch application workflows"
 readme = "README.md"
 keywords = ["mcp", "agent-skill", "job-search", "career-tools", "resume", "cover-letter", "job-matching", "multilingual"]
 requires-python = ">=3.11"
@@ -20,9 +20,9 @@ dependencies = [
 career-compass-mcp = "career_compass_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/plilian/career-compass-mcp-skill"
-Repository = "https://github.com/plilian/career-compass-mcp-skill"
-Issues = "https://github.com/plilian/career-compass-mcp-skill/issues"
+Homepage = "https://github.com/plilian/resume-to-role-mcp"
+Repository = "https://github.com/plilian/resume-to-role-mcp"
+Issues = "https://github.com/plilian/resume-to-role-mcp/issues"
 
 [dependency-groups]
 dev = ["pytest>=8,<9", "anyio>=4,<5"]

@@ -1,1 +1,1 @@
-"""Career Compass MCP package."""
+"""Resume-to-Role MCP package."""

@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Career Compass application workflow</title>
-  <desc id="desc">Your profile and resumes guide job discovery. Jobs are matched against resume evidence. Your signed-in AI host prepares a tailored resume and cover letter for each selected job.</desc>
+  <title id="title">Resume-to-Role job search and application workflow</title>
+  <desc id="desc">Your target job titles and countries guide discovery. Every imported resume contributes evidence for job-description ranking. Your signed-in AI host generates a job-tailored resume and cover letter, then fills and submits requested batches of up to five applications when browser controls are available.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FBFD"/><stop offset="1" stop-color="#ECF4F7"/></linearGradient>
     <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#118C91"/><stop offset="1" stop-color="#D49B42"/></linearGradient>
     <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#15334A" flood-opacity=".11"/></filter>
   </defs>
   <rect x="1" y="1" width="1198" height="298" rx="22" fill="url(#panel)" stroke="#D6E5EB"/>
-  <text x="44" y="49" fill="#142D42" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="750">A clear path from search to a stronger application</text>
-  <text x="44" y="75" fill="#577083" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">You stay in control of your criteria, your evidence, and which jobs receive documents.</text>
+  <text x="44" y="49" fill="#142D42" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="750">From all your resumes to submitted applications</text>
+  <text x="44" y="75" fill="#577083" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">Search by your target titles and countries. Rank with every resume. Tailor and apply job by job.</text>
 
   <path d="M195 165 H1005" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
   <path d="m1000 157 15 8-15 8" fill="none" stroke="#B88231" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -18,33 +18,33 @@
       <rect width="245" height="133" rx="15" fill="#FFFFFF" stroke="#D7E6EB"/>
       <circle cx="30" cy="31" r="17" fill="#DAF4EF"/><text x="30" y="36" text-anchor="middle" fill="#127D78" font-size="14" font-weight="750">1</text>
       <text x="58" y="36" fill="#16384A" font-size="16" font-weight="700">Your profile &amp; resumes</text>
-      <text x="22" y="72" fill="#526D7C" font-size="12.5">Target roles and countries</text>
-      <text x="22" y="94" fill="#526D7C" font-size="12.5">All selected resume evidence</text>
+      <text x="22" y="72" fill="#526D7C" font-size="12.5">All imported resumes pooled</text>
+      <text x="22" y="94" fill="#526D7C" font-size="12.5">Your target titles and countries</text>
       <text x="22" y="116" fill="#526D7C" font-size="12.5">Optional work and mobility filters</text>
     </g>
     <g transform="translate(334 105)">
       <rect width="245" height="133" rx="15" fill="#FFFFFF" stroke="#D7E6EB"/>
       <circle cx="30" cy="31" r="17" fill="#DAF4EF"/><text x="30" y="36" text-anchor="middle" fill="#127D78" font-size="14" font-weight="750">2</text>
       <text x="58" y="36" fill="#16384A" font-size="16" font-weight="700">Job discovery</text>
-      <text x="22" y="72" fill="#526D7C" font-size="12.5">Public feeds and Bing search</text>
-      <text x="22" y="94" fill="#526D7C" font-size="12.5">Job boards and career pages</text>
+      <text x="22" y="72" fill="#526D7C" font-size="12.5">Public feeds and web search</text>
+      <text x="22" y="94" fill="#526D7C" font-size="12.5">Boards and company career pages</text>
       <text x="22" y="116" fill="#526D7C" font-size="12.5">Company ATS postings</text>
     </g>
     <g transform="translate(634 105)">
       <rect width="245" height="133" rx="15" fill="#FFFFFF" stroke="#D7E6EB"/>
       <circle cx="30" cy="31" r="17" fill="#DAF4EF"/><text x="30" y="36" text-anchor="middle" fill="#127D78" font-size="14" font-weight="750">3</text>
       <text x="58" y="36" fill="#16384A" font-size="16" font-weight="700">Evidence-based match</text>
-      <text x="22" y="72" fill="#526D7C" font-size="12.5">JD skills compared across resumes</text>
-      <text x="22" y="94" fill="#526D7C" font-size="12.5">Title relevance shown separately</text>
+      <text x="22" y="72" fill="#526D7C" font-size="12.5">Ranked by JD skill coverage</text>
+      <text x="22" y="94" fill="#526D7C" font-size="12.5">All resumes; title fit separate</text>
       <text x="22" y="116" fill="#526D7C" font-size="12.5">Exact quotes can be verified</text>
     </g>
     <g transform="translate(934 105)">
       <rect width="232" height="133" rx="15" fill="#FFFFFF" stroke="#D7E6EB"/>
       <circle cx="30" cy="31" r="17" fill="#FFF0D8"/><text x="30" y="36" text-anchor="middle" fill="#A77020" font-size="14" font-weight="750">4</text>
       <text x="58" y="36" fill="#16384A" font-size="16" font-weight="700">Tailor &amp; prepare</text>
-      <text x="22" y="72" fill="#526D7C" font-size="12.5">Job-specific resume + letter</text>
-      <text x="22" y="94" fill="#526D7C" font-size="12.5">ATS-friendly DOCX and PDF</text>
-      <text x="22" y="116" fill="#526D7C" font-size="12.5">You choose each application</text>
+      <text x="22" y="72" fill="#526D7C" font-size="12.5">Tailored resume + cover letter</text>
+      <text x="22" y="94" fill="#526D7C" font-size="12.5">Fill and submit batches of five</text>
+      <text x="22" y="116" fill="#526D7C" font-size="12.5">Host browser required to submit</text>
     </g>
   </g>
   <text x="600" y="275" text-anchor="middle" fill="#678092" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">Runs locally with your signed-in AI host · English · Farsi · Spanish · Arabic</text>

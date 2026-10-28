@@ -12,14 +12,14 @@ if ($HostName -eq 'Codex') {
   if (-not (Get-Command codex -ErrorAction SilentlyContinue)) { throw 'Codex CLI was not found. Add the MCP command from README.md instead.' }
   & codex mcp add career-compass -- $uvPath @argsList
   if ($LASTEXITCODE -ne 0) { throw 'Codex did not register the MCP server.' }
-  Write-Output 'Career Compass MCP registered with Codex.'
+  Write-Output 'Resume-to-Role MCP registered with Codex.'
   exit 0
 }
 if ($HostName -eq 'Claude') {
   if (-not (Get-Command claude -ErrorAction SilentlyContinue)) { throw 'Claude Code CLI was not found. Add the MCP command from README.md instead.' }
   & claude mcp add --scope user career-compass -- $uvPath @argsList
   if ($LASTEXITCODE -ne 0) { throw 'Claude Code did not register the MCP server.' }
-  Write-Output 'Career Compass MCP registered with Claude Code.'
+  Write-Output 'Resume-to-Role MCP registered with Claude Code.'
   exit 0
 }
 $settingsPath = if ($HostName -eq 'Gemini') {
@@ -48,5 +48,5 @@ if ((Test-Path -LiteralPath $settingsPath) -and $Force) {
 }
 $json = ConvertTo-Json -InputObject $settings -Depth 80
 [IO.File]::WriteAllText($settingsPath,$json,[Text.UTF8Encoding]::new($false))
-Write-Output "Career Compass MCP registered with $HostName in $settingsPath"
+Write-Output "Resume-to-Role MCP registered with $HostName in $settingsPath"
 if (Test-Path -LiteralPath $backup) { Write-Output "Previous settings backed up to $backup" }

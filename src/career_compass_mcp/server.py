@@ -18,7 +18,7 @@ from .preferences import (LANGUAGE_NAMES, detect_language, effective_preferences
 from .sources import base, crawl_career_sites, make_search_queries, search_company_boards, search_public_feeds
 from .store import Store, data_dir
 
-mcp=MCPServer("career-compass")
+mcp=MCPServer("resume-to-role")
 store=Store()
 
 def _infer_work_mode(item: dict[str,Any]) -> None:

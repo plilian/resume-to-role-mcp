@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="docs/career-compass-banner.svg" alt="Career Compass — discover, match, tailor, and prepare" width="100%" />
+<h1>Resume-to-Role</h1>
 
-### A multilingual job-search copilot for the AI assistant you already use
+<img src="docs/resume-to-role-banner.svg" alt="Resume-to-Role — job discovery from your full resume library, ranked matches, tailored application documents, and batch submission" width="100%" />
 
-**Discover more relevant roles. Match them against all your experience. Prepare a focused, evidence-backed application for every job you choose.**
+### All-resume job discovery. Per-job tailoring. Batch applications.
+
+**Search for roles using your chosen titles and countries. Rank each job against skills across every resume you import. Generate a job-specific, ATS-friendly resume and cover letter—then fill and submit applications in requested batches of up to five through your signed-in AI host.**
 
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![MCP](https://img.shields.io/badge/Protocol-MCP-635BFF)](https://modelcontextprotocol.io/)
@@ -12,40 +14,40 @@
 [![Hosts](https://img.shields.io/badge/Hosts-Codex%20%7C%20Claude%20%7C%20Gemini%20%7C%20Qwen-344054)](#works-with-your-signed-in-ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2E8B57.svg)](LICENSE)
 
-[Get started](#get-started) · [How it works](#how-it-works) · [Sources](#job-discovery) · [Privacy](#privacy-first-by-design)
+[Get started](#get-started) · [How it works](#how-it-works) · [Job sources](#job-discovery) · [Batch applications](#send-applications-in-batches) · [Privacy](#privacy-first-by-design)
 
 </div>
 
-Career Compass is a **local-first MCP server and portable Agent Skill** for people managing a serious job search across multiple roles, resumes, countries, and languages. It connects job discovery and application preparation to the signed-in AI host you already have—without asking you to configure a separate model API key.
+**Resume-to-Role** is a local-first **MCP server + portable AI Skill** that turns your complete resume library into a focused job-search and application workflow. It searches for your target titles in your selected countries, ranks job descriptions by skill coverage across all imported resumes, and helps your signed-in AI create tailored application documents and send requested batches of up to five applications.
 
-> You choose the roles, countries, and opportunities. Career Compass helps your assistant search broadly, explain the fit, and create tailored materials from your own evidence.
+> **Bring every resume. Find the right roles. Tailor every application.** Your chosen titles drive discovery; all your resume evidence powers the ranking and job-specific writing.
 
 ## How it works
 
 <div align="center">
-<img src="docs/career-compass-workflow.svg" alt="Career Compass workflow from your profile and resumes through job discovery, evidence-based matching, tailored documents, and application preparation" width="100%" />
+<img src="docs/resume-to-role-workflow.svg" alt="Resume-to-Role workflow from your profile and every resume through job discovery, evidence-based ranking, tailored resume and cover letter generation, and requested batch application submission" width="100%" />
 </div>
 
-| Stage | What Career Compass does |
+| Stage | What Resume-to-Role does |
 | --- | --- |
-| **Discover** | Searches public job feeds, Bing job results, targeted job-board and company-career queries, and public ATS boards. |
-| **Match** | Compares job-description skills with evidence pooled across every resume you import. It reports title relevance separately. |
-| **Tailor** | Gives your signed-in host the selected job description and relevant, source-labeled evidence to draft a role-specific resume and cover letter. |
-| **Prepare** | Checks drafts, exports DOCX/PDF, preserves source links, and tracks the jobs you are considering. |
+| **Discover** | Searches public job feeds, Bing results, target-title queries across job boards and company career pages, and public ATS boards. |
+| **Rank** | Compares each job description's skills against the combined evidence in every resume you import. Role-title relevance is shown separately. |
+| **Tailor** | Creates a new resume and cover letter for the selected job description, using the most relevant evidence across your resume library. |
+| **Apply** | Exports DOCX/PDF, tracks selected jobs, and fills and submits user-requested batches of up to five when the AI host has browser controls. |
 
-## Why Career Compass
+## What Resume-to-Role does for you
 
 ### Search beyond one job board
 
-Use built-in public job feeds and Bing's public search feed, then expand discovery with Google or Bing web search in your signed-in host. Paginated queries target job boards, regional sites, and employer career pages. When a public careers page reveals an ATS board, Career Compass can query supported Greenhouse, Lever, Ashby, and SmartRecruiters boards directly.
+Use built-in public job feeds and Bing's public search feed, then expand discovery with Google or Bing web search in your signed-in host. Paginated queries search for your chosen job titles across job boards, regional sites, and employer career pages. When a public careers page reveals a board identifier, Resume-to-Role can query supported Greenhouse, Lever, Ashby, and SmartRecruiters boards directly.
 
 ### Match skills across your full experience
 
-Import multiple resumes and assess the job's identifiable skills against the combined evidence. A job title does not erase relevant skills from another part of your background: **skill coverage and title relevance remain separate**. The connected AI host can make a semantic assessment, while Career Compass checks cited quotes against the underlying resume evidence.
+Import your full set of resumes and assess each job's identifiable skills against the combined evidence. A job title does not erase relevant skills from another part of your background: **skill coverage and role-title relevance remain separate**. The connected AI host makes a semantic assessment; Resume-to-Role verifies cited quotes against the original resume evidence. Jobs matching your target titles remain discoverable even when one resume does not show every required skill.
 
 ### Tailor each application to the selected job
 
-For a job you select, the Skill guides your host to prioritize that job description and the strongest relevant evidence across your resumes. It produces a plain-text, ATS-readable resume and a distinct cover letter written for the role and employer—not a copy of the resume. Drafts are checked for document structure, evidence provenance, and unsupported numeric claims before export.
+For a job you select, the Skill guides your host to prioritize that exact job description and the strongest relevant evidence across all your resumes. It builds the resume header, summary, skills, experience, and projects for that role, then writes a separate cover letter for the employer. The result is an ATS-readable resume and a persuasive, role-specific letter—not one generic resume or a summary pasted into a cover letter. Drafts are checked for document structure, evidence provenance, and unsupported numeric claims before export.
 
 The cover-letter workflow targets **220–320 words** and asks for a specific opening, a concise evidence-backed example, a reasoned connection to the employer's stated needs, and a natural close. These checks improve consistency; they do not guarantee an employer response or a score from any third-party ATS.
 
@@ -57,13 +59,13 @@ The cover-letter workflow targets **220–320 words** and asks for a specific op
 - Selected arrangement and mobility options are acceptable alternatives: a listing that satisfies any selected option can qualify. Empty lists mean **search across all options**.
 - Country/work authorization remains unknown unless the listing provides evidence. The tool does not treat “remote” as automatic work eligibility.
 
-### Prepare a requested batch
+### Send applications in batches
 
-For a batch you explicitly request, the Skill can prepare up to **five distinct jobs** at a time. If your host exposes browser controls, it can help fill the corresponding forms with your profile and job-specific documents. It does not guess unknown answers, bypass CAPTCHA or two-factor authentication, or claim an application was submitted without a visible confirmation. Without browser controls, it returns the prepared documents and listing links.
+Ask your AI host to apply to a batch of up to **five distinct jobs**. When browser controls are available, the Skill generates each job's tailored resume and cover letter, fills the employer's form with your saved profile details, and submits the application. It reports an application as sent only after the employer site shows confirmation. If browser controls are unavailable—or a site requires a human step—it prepares the documents and direct links so you can finish the application. Every batch is requested by you; the tool does not run unattended.
 
 ## Job discovery
 
-Career Compass combines several discovery paths. Availability and freshness depend on the public source and its rate limits.
+Resume-to-Role combines several discovery paths. Availability and freshness depend on the public source and its rate limits.
 
 | Discovery path | Included sources | How it works |
 | --- | --- | --- |
@@ -75,17 +77,17 @@ Career Compass combines several discovery paths. Availability and freshness depe
 
 Search-query coverage includes LinkedIn job pages, Indeed, Glassdoor, Wellfound, Y Combinator Jobs, EURES, Welcome to the Jungle, Working Nomads, Jobgether, Himalayas, Arbeitnow, Jobicy, Landing.jobs, Relocate.me, No Fluff Jobs, StepStone, Kariyer, Techcareer, InfoJobs, Tecnoempleo, Ergodotisi, Work in Finland, Work in Denmark, and employer career pages. **LinkedIn is not scraped.** Google/Bing web-search queries require native web search in the connected host; the built-in Bing RSS search is a separate source.
 
-Career Compass reports source errors instead of implying an unavailable source was searched. Results retain their reported source and original listing URL; a search-result or careers page is labeled as such when it is not a direct application form.
+The product reports source errors instead of implying an unavailable source was searched. Results retain their reported source and original listing URL; a search-result or careers page is labeled as such when it is not a direct application form.
 
 ## Works with your signed-in AI
 
 The MCP server provides local data, search, matching, validation, and export tools. **It does not call an OpenAI, Anthropic, Google, or Qwen model API.** Codex, Claude Code, Gemini CLI, or Qwen Code uses its existing signed-in model for semantic job analysis and writing. No separate LLM API key is needed.
 
-The included `career-compass` Skill explains how the host should use the MCP tools, search with native web search when available, preserve evidence citations, and draft in the selected language. Host commands and configuration formats can change; follow the current documentation for your installed host if a CLI command differs.
+The included `career-compass` Skill explains how the host should use the MCP tools, search with native web search when available, preserve evidence citations, draft in the selected language, and complete requested application batches. The server command and Skill registration retain the `career-compass` identifier for compatibility with existing host configurations. Host commands and configuration formats can change; follow the current documentation for your installed host if a CLI command differs.
 
 ## Multilingual by design
 
-Career Compass supports **English, Farsi, Spanish, and Arabic** for interaction and generated documents. The Skill can ask the host to translate search titles into the selected search languages. Generated Farsi and Arabic documents use right-to-left layout; PDF export also needs an Arabic-capable font on the computer (Arial, Tahoma, or Noto Sans Arabic).
+Resume-to-Role supports **English, Farsi, Spanish, and Arabic** for interaction and generated documents. The Skill can ask the host to translate search titles into the selected search languages. Generated Farsi and Arabic documents use right-to-left layout; PDF export also needs an Arabic-capable font on the computer (Arial, Tahoma, or Noto Sans Arabic).
 
 ## Get started
 
@@ -101,8 +103,8 @@ Career Compass supports **English, Farsi, Spanish, and Arabic** for interaction 
 Download or clone this repository, open PowerShell in its folder, and run the setup helper for the host you use:
 
 ```powershell
-git clone https://github.com/plilian/career-compass-mcp-skill.git
-cd career-compass-mcp-skill
+git clone https://github.com/plilian/resume-to-role-mcp.git
+cd resume-to-role-mcp
 Set-ExecutionPolicy -Scope Process Bypass
 .\Setup.ps1 -HostName Codex
 ```
@@ -114,12 +116,12 @@ To install only the Skill or register only the MCP server, use `Install-Skill.ps
 ### macOS and Linux
 
 ```bash
-git clone https://github.com/plilian/career-compass-mcp-skill.git
-cd career-compass-mcp-skill
+git clone https://github.com/plilian/resume-to-role-mcp.git
+cd resume-to-role-mcp
 uv sync
 ```
 
-Register the server with your host using `uv --directory "/absolute/path/to/career-compass-mcp-skill" run career-compass-mcp`, and copy `skills/career-compass` into that host's user Skill directory. Exact configuration steps are in [Host setup details](docs/SETUP.md).
+Register the server with your host using `uv --directory "/absolute/path/to/resume-to-role-mcp" run career-compass-mcp`, and copy `skills/career-compass` into that host's user Skill directory. Exact configuration steps are in [Host setup details](docs/SETUP.md).
 
 ### First search
 
@@ -146,7 +148,7 @@ All list and search tools that can return long results use pagination. The initi
 ## Privacy first by design
 
 - Resume contents, profile data, saved jobs, and generated documents are stored in local SQLite under your operating-system user-data directory. Set `CAREER_COMPASS_HOME` to choose another local directory.
-- The MCP server does not upload resumes to its author or a hosted Career Compass service. Resume imports are limited to the folders you explicitly configure.
+- The MCP server does not upload resumes to its author or a hosted Resume-to-Role service. Resume imports are limited to the folders you explicitly configure.
 - The signed-in AI host receives evidence when it is included in a conversation or document request; that processing is governed by the host provider's terms and settings.
 - Public job and website sources receive ordinary requests to fetch or search their pages. A host's native web search follows that host's own service and privacy terms.
 - Do not add resumes, filled profile data, generated application documents, local databases, secrets, or personal screenshots to this repository.
@@ -173,8 +175,8 @@ The tests cover the MCP handshake, matching and evidence checks, source/query lo
 
 ## License
 
-Career Compass is released under the [MIT License](LICENSE).
+Resume-to-Role is released under the [MIT License](LICENSE).
 
 ---
 
-**Career Compass — search with intent, match with evidence, and tailor every application.**
+**Resume-to-Role — your whole resume library, matched to real openings and tailored for every application.**
