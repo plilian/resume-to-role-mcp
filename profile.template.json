@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "email": "",
+  "phone": "",
+  "location": "",
+  "linkedin_url": "",
+  "github_url": "",
+  "website_url": "",
+  "evidence_sources": [],
+  "resume_roots": [],
+  "target_titles": [],
+  "countries": [],
+  "remote_preferences": [],
+  "seniority": [],
+  "languages": [],
+  "notes": "",
+  "preferred_language": "en",
+  "document_language": "job",
+  "search_languages": [
+    "en"
+  ],
+  "work_arrangements": [],
+  "mobility_support": []
+}
